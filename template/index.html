@@ -18,7 +18,7 @@
           integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <title>TRI Identifier</title>
+    <title>Rubber Leaf Disease Identifier</title>
     <style type="text/css">
 
         .p-green {
@@ -134,7 +134,7 @@
 
 <nav class="navbar navbar-dark p-green">
     <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1"><i class="fas fa-leaf"></i> TRI Identifier
+            <span class="navbar-brand mb-0 h1"><i class="fas fa-leaf"></i> Rubber Leaf Disease Identifier
             </span>
     </div>
 </nav>
@@ -371,28 +371,28 @@
                 let result_prev = document.getElementById("result_prev");
 
                 if (response.valid) {
-                    t23.style.width = response.tri2023 + '%';
-                    t23.innerHTML = response.tri2023 + '%';
+                    colletotrichum.style.width = response.colletotrichum + '%';
+                    colletotrichum.innerHTML = response.colletotrichum + '%';
 
-                    t26.style.width = response.tri2026 + '%';
-                    t26.innerHTML = response.tri2026 + '%';
+                    oidium.style.width = response.oidium + '%';
+                    oidium.innerHTML = response.oidium + '%';
 
-                    t25.style.width = response.tri2025 + '%';
-                    t25.innerHTML = response.tri2025 + '%';
+                    corynespora.style.width = response.corynespora + '%';
+                    corynespora.innerHTML = response.corynespora + '%';
 
                     result_prev.src = image_data_url;
 
                     probability.innerHTML = `This clone has a ${response.max_val}% probability to be`;
                     prediction_res.innerHTML = response.max_clone;
                 } else {
-                    t23.style.width = '0%';
-                    t23.innerHTML = '0%';
+                    colletotrichum.style.width = '0%';
+                    colletotrichum.innerHTML = '0%';
 
-                    t26.style.width = '0%';
-                    t26.innerHTML = '0%';
+                    oidium.style.width = '0%';
+                    oidium.innerHTML = '0%';
 
-                    t25.style.width = '0%';
-                    t25.innerHTML = '0%';
+                    corynespora.style.width = '0%';
+                    corynespora.innerHTML = '0%';
 
                     result_prev.src = image_data_url;
 
